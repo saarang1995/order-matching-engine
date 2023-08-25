@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -10,7 +11,7 @@ returning 0 means program ran successfully without errors
 int main() {
     Status progressStatus;
     progressStatus = Pending;
-    cout << "Value of enum progressStatus : " << progressStatus;
+    cout << "Value of enum progressStatus : " << setw(14) << progressStatus;
     
     string name;
     const string species = "Human";

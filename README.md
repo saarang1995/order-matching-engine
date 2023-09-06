@@ -31,3 +31,18 @@ Orderbook should be able to update existing Orders
 Orderbook should be able to delete existing Orders
 ! Will we require a unique identifier (ID) for finding orders?
 Received order should be added to the orderbook maintained in the memory
+
+### Data structure
+
+Asks Map {
+price: {quantity},
+price: {quantity},
+price: {quantity},
+price: {quantity},
+}
+Bids Map {
+price: {quantity},
+price: {quantity},
+price: {quantity},
+price: {quantity},
+}

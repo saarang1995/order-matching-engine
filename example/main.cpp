@@ -1,6 +1,13 @@
 #include <iostream>
+#include "orderbook/orderbook.h"
 
-int main() {
-    std::cout << "Hello";
+using namespace std;
+
+int main()
+{
+    cout << "Initiating orderbook";
+    auto orderbook = OrderBook();
+    orderbook.placeOrder();
+
     return 0;
-}
+};

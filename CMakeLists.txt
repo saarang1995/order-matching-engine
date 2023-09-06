@@ -5,10 +5,12 @@ project(OrderBook)
 add_subdirectory(include)
 add_subdirectory(src)
 
-option(BUILD_EXAMPLES "Whether or not to build examples"
+# giving users to build the project or not
+
+option(BUILD_EXAMPLES "Whether to build the examples or not"
     ON)
 
-if (BUILD_EXAMPLES)
-    message(STATUS "Building examples...")
+if(BUILD_EXAMPLES)
+    message(STATUS "Buidling examples...")
     add_subdirectory(example)
 endif()
